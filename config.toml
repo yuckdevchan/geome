@@ -1,0 +1,16 @@
+[Controls]
+    move_forward = "w"
+    move_left = "a"
+    move_backward = "s"
+    move_right = "d"
+    jump = "space"
+    exit_to_desktop = "escape"
+    select = "mouse1"
+
+[Graphics]
+    fov = 95
+    fullscreen = true
+    vsync = true
+
+[Debug]
+    show_framerate = true
