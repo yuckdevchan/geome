@@ -1,0 +1,11 @@
+{
+    "name": "Cobblestone",
+    "desc": "The 3rd humblest of beginnings.",
+    "textures": {
+        "all": [
+            "cobblestone.png",
+            "cobblestone1.png",
+            "cobblestone2.png"
+        ]
+    }
+}

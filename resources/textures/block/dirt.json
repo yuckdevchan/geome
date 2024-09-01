@@ -1,5 +1,11 @@
 {
     "name": "Dirt Block",
     "desc": "The humblest of beginnings.",
-    "textures": ["dirt.png", "dirt1.png", "dirt2.png"]
+    "textures": {
+        "all": [
+            "dirt.png",
+            "dirt1.png",
+            "dirt2.png"
+        ]
+    }
 }

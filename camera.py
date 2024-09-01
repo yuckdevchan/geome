@@ -44,6 +44,7 @@ class FirstPersonCamera(DirectObject):
         self.accept(config["Controls"]["select"], self.start_mouse_look)
         self.accept("o", self.stop_mouse_look)
         self.accept(config["Controls"]["exit_to_desktop"], self.exit_game)
+        self.accept(config["Controls"]["wireframe"], self.base.toggle_wireframe)
     
         self.moving_forward = False
         self.moving_backward = False

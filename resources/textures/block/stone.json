@@ -1,0 +1,10 @@
+{
+    "name": "Stone",
+    "desc": "The 2nd humblest of beginnings.",
+    "textures": {
+        "all": [
+            "stone.png",
+            "stone1.png"
+        ]
+    }
+}
