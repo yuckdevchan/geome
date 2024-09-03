@@ -1,0 +1,18 @@
+{
+    "name": "Stone Bricks",
+    "desc": "The start of a great castle, or a terrible fortress.",
+    "textures": {
+        "all": [
+            "stone_bricks.png",
+            "mossy_stone_bricks.png",
+            "mossy_stone_bricks1.png",
+            "mossy_stone_bricks2.png",
+            "mossy_stone_bricks3.png",
+            "mossy_stone_bricks4.png",
+            "mossy_stone_bricks5.png",
+            "cracked_stone_bricks.png",
+            "cracked_stone_bricks1.png",
+            "chiseled_stone_bricks.png"
+        ]
+    }
+}

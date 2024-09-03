@@ -1,0 +1,11 @@
+{
+    "name": "Cobweb",
+    "desc": "Don't get stuck!",
+    "textures": {
+        "all": [
+            "cobweb.png"
+        ],
+        "transparent": true,
+        "billboard": true
+    }
+}

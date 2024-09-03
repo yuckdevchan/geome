@@ -1,0 +1,11 @@
+{
+    "name": "Deepslate",
+    "desc": "Stone from the depths of the world.",
+    "textures": {
+        "all": [
+            "deepslate.png",
+            "deepslate1.png",
+            "deepslate2.png"
+        ]
+    }
+}

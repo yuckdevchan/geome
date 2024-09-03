@@ -1,15 +1,19 @@
 # Geome Config File
 # For information about the syntax: https://toml.io
+# For the default config: https://github.com/yuckdevchan/geome/blob/main/config.toml
 
 [World]
-    max_world_height = 10
+    max_world_height = 512
     chunk_width = 32
 
 [Controls]
+    break_block = "mouse2"
+    place_block = "mouse1"
     move_forward = "w"
     move_left = "a"
     move_backward = "s"
     move_right = "d"
+    sprint = "left_shift"
     jump = "space"
     exit_to_desktop = "escape"
     select = "mouse1"

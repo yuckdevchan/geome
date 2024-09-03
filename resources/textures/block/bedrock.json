@@ -1,0 +1,9 @@
+{
+    "name": "Bedrock",
+    "desc": "There's nothing deeper than me!",
+    "textures": {
+        "all": [
+            "bedrock.png"
+        ]
+    }
+}

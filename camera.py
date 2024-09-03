@@ -6,14 +6,14 @@ from direct.showbase.DirectObject import DirectObject
 
 import os
 
-from config import config
+from config import config, core
 from log import log
 
 class FirstPersonCamera(DirectObject):
     def __init__(self, base):
         self.base = base
         self.camera = base.camera
-        self.speed = 10
+        self.speed = core["Settings"]["player_speed"]
         self.sensitivity = 0.2
         self.base.camLens.set_fov(config["Graphics"]["fov"])
         # Fullscreen
@@ -32,6 +32,7 @@ class FirstPersonCamera(DirectObject):
         self.base.win.requestProperties(props)
 
     def setup_controls(self):
+        self.accept(config["Controls"]["break_block"], self.break_block)
         self.accept(config["Controls"]["move_forward"], self.set_move_forward, [True])
         self.accept(config["Controls"]["move_forward"] + "-up", self.set_move_forward, [False])
         self.accept(config["Controls"]["move_backward"], self.set_move_backward, [True])
@@ -40,7 +41,8 @@ class FirstPersonCamera(DirectObject):
         self.accept(config["Controls"]["move_left"] + "-up", self.set_move_left, [False])
         self.accept(config["Controls"]["move_right"], self.set_move_right, [True])
         self.accept(config["Controls"]["move_right"] + "-up", self.set_move_right, [False])
-        self.accept(config["Controls"]["jump"], self.jump)
+        # self.accept(config["Controls"]["sprint"], self.toggle_sprint)
+        # self.accept(config["Controls"]["jump"], self.jump)
         self.accept(config["Controls"]["select"], self.start_mouse_look)
         self.accept("o", self.stop_mouse_look)
         self.accept(config["Controls"]["exit_to_desktop"], self.exit_game)
@@ -52,6 +54,9 @@ class FirstPersonCamera(DirectObject):
         self.moving_right = False
     
         self.base.taskMgr.add(self.update_camera, "update_camera")
+    
+    def break_block(self):
+        pass
     
     def set_move_forward(self, value):
         self.moving_forward = value
@@ -111,4 +116,3 @@ class FirstPersonCamera(DirectObject):
     
     def exit_game(self):
         log("Exiting game...")
-        # os._exit(0)
